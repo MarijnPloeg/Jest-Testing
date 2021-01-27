@@ -1,0 +1,26 @@
+{
+  "name": "jest-testing",
+  "version": "1.0.0",
+  "description": "Oefen met testen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarijnPloeg/Jest-Testing.git"
+  },
+  "keywords": [
+    "Jest",
+    "testing"
+  ],
+  "author": "Marijn Ploeg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarijnPloeg/Jest-Testing/issues"
+  },
+  "homepage": "https://github.com/MarijnPloeg/Jest-Testing#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
