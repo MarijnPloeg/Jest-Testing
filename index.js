@@ -11,6 +11,14 @@ function findByName(users, name){
     return null;
 }
 
+function toCelcius(fahrenheit) {
+    return (fahrenheit - 32) * (5/9)
+}
+
+function toFahrenheit(celcius) {
+    return celcius * 9 / 5 + 32;
+}
+
 module.exports = {
     add: addNumbers,
     findByName: findByName,
