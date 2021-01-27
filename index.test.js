@@ -1,18 +1,7 @@
-function add(num1, num2) {
-    return num1 + num2;
-}
+const addNumbers = require('./index').add;
+const findByName = require('./index').findByName;
 
-function findByName(users, name){
-    for (const user of users) {
-        if (user.name === name){
-            return user;
-        }
-    }
-    return null;
-}
-
-
-test('add() function should return the sum of 2 numbers', () => {
+test('addNumbers() function should return the sum of 2 numbers', () => {
     console.log('Hallo, dit is een test')
 
     //Arrange
@@ -20,7 +9,7 @@ test('add() function should return the sum of 2 numbers', () => {
     const num2 = 5;
 
     //Act
-    const sum = add(num1, num2);
+    const sum = addNumbers(num1, num2);
 
     //Assert
     expect(sum).toBe(9); //Expect en toBe komen uit Jest framework
