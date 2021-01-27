@@ -11,17 +11,11 @@ function findByName(users, name){
     return null;
 }
 
-function toCelcius(fahrenheit) {
-    return (fahrenheit - 32) * (5/9)
-}
+// Maak een functie die een parameter Fahrenheit ontvangt en omzet naar Celcius en teruggeeft
 
-function toFahrenheit(celcius) {
-    return celcius * 9 / 5 + 32;
-}
+// Maak nu een functie die een parameter Celcius ontvangt en deze omzet naar Fahrenheit en teruggeeft
 
 module.exports = {
     addNumbers: addNumbers,
     findByName: findByName,
-    toCelcius: toCelcius,
-    toFahrenheit: toFahrenheit,
 }

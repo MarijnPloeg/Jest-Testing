@@ -50,7 +50,7 @@ test('toFahrenheit() should convert given Celcius degrees to Fahrenheit', () =>{
     //Act
     const fahrenheit = toFahrenheit(celcius);
     //Assert
-    expect(fahrenheit).toBe(50);
+    expect(fahrenheit)
 
 });
 
