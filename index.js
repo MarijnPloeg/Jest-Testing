@@ -20,6 +20,8 @@ function toFahrenheit(celcius) {
 }
 
 module.exports = {
-    add: addNumbers,
+    addNumbers: addNumbers,
     findByName: findByName,
+    toCelcius: toCelcius,
+    toFahrenheit: toFahrenheit,
 }
