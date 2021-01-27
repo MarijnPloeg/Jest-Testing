@@ -1,5 +1,4 @@
-const addNumbers = require('./index').add;
-const findByName = require('./index').findByName;
+const {addNumbers, findByName, toCelcius, toFahrenheit} = require('./index');
 
 test('addNumbers() function should return the sum of 2 numbers', () => {
     console.log('Hallo, dit is een test')
@@ -35,3 +34,23 @@ test('findByName() should return null if the element is not found', () => {
     expect(user).toBeNull();
 
 });
+
+test('toCelcius() should convert given Fahrenheit degrees to Celcius', () => {
+    //Arrange
+    const fahrenheit = 50;
+    //Act
+    const celcius = toCelcius(fahrenheit);
+    //Assert
+    expect(celcius).toBe(10)
+});
+
+test('toFahrenheit() should convert given Celcius degrees to Fahrenheit', () =>{
+    //Arrange
+    const celcius = 10;
+    //Act
+    const fahrenheit = toFahrenheit(celcius);
+    //Assert
+    expect(fahrenheit).toBe(50);
+
+});
+
